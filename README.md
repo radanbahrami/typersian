@@ -1,6 +1,7 @@
 # Typersian
 
 Typersian is an open-source application that lets you convert Finglish(Persian written in Latin script) into Persian script, anywhere on your device.
+
 (e.g., it turns "Salam chetori?" into "سلام چطوری؟")
 
 
@@ -51,7 +52,6 @@ Typersian only listens for the **Left Ctrl** and **F9** keys. No other keys or k
 ## License
 
 Typersian is licensed under the GNU General Public License v3.0 (Additional terms apply—see LICENSE.txt).
-*Because it incorporates a component that is licensed under the GPL v3.0.*
 
 ## Contributing
 
@@ -60,7 +60,9 @@ Contributions are currently not accepted.
 ## Author
 
 Created by Radan Bahrami
+
 LinkedIn: [linkedin.com/in/radanbahrami](https://www.linkedin.com/in/radanbahrami)
+
 Website: [radanbahrami.com](https://radanbahrami.com)
 
 ## Contact Me
