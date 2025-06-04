@@ -67,4 +67,4 @@ Website: [radanbahrami.com](https://radanbahrami.com)
 
 ## Contact Me
 
-You can contact me via email: radanbhr@gmail.com
+You can contact me via email: radanbhr@gmail.com.
