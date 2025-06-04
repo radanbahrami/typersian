@@ -236,3 +236,4 @@ def tray(on_quit_callback):
 
 if __name__ == "__main__":
     tray(lambda: print("Exiting..."))
+    
