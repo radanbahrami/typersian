@@ -9,9 +9,9 @@ Pursuant to Section 7 of the GPLv3, the following additional terms apply:
 
 1. Legal notices and author attributions included in this material must be preserved in all copies or substantial portions of the software, including in the Appropriate Legal Notices displayed by works containing it.
 
-2. The logo and the name “Typersian” are trademarks of Radan Bahrami. No rights under trademark law are granted under this License. Use of these trademarks is prohibited without explicit written permission.
+2. The Typersian logos and the name “Typersian” are trademarks of Radan Bahrami. No rights under trademark law are granted under this License. Use of these trademarks is prohibited without explicit written permission.
 
-3. You may not use the name “Typersian”, the Typersian logo, the author's name, or other branding elements to imply endorsement, origin, or association with the original project or its author, except as permitted by trademark law or with explicit written permission from Radan Bahrami.
+3. You may not use the name “Typersian”, the Typersian logos, the author's name, or other branding elements to imply endorsement, origin, or association with the original project or its author, except as permitted by trademark law or with explicit written permission from Radan Bahrami.
 
 If you distribute a modified version of this software, you must clearly mark it as modified and must not present it as the original Typersian project.
 
