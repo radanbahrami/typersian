@@ -36,11 +36,11 @@ class AboutDialog(QDialog):
         self.setWindowTitle("About Typersian")
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
         self.setFixedSize(600, 600)
-        self.setWindowIcon(QIcon(get_asset_path("logo.png")))
+        self.setWindowIcon(QIcon(get_asset_path("logoclean.png")))
 
         # Logo
         logo = QLabel()
-        pixmap = QPixmap(get_asset_path("logo.png")).scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        pixmap = QPixmap(get_asset_path("logoclean.png")).scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         logo.setPixmap(pixmap)
         logo.setAlignment(Qt.AlignCenter)
 
@@ -205,7 +205,7 @@ def tray(on_quit_callback):
 
     # Create the system tray icon
     tray_icon = QSystemTrayIcon()
-    tray_icon.setIcon(QIcon(get_asset_path("logo.png")))
+    tray_icon.setIcon(QIcon(get_asset_path("logoclean.png")))
 
     # Create a menu for the tray icon
     menu = QMenu()
