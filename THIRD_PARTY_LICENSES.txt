@@ -1,4 +1,5 @@
-Component: Account Circle Icon (account_circle_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24) (https://fonts.google.com/icons)
+Component: Account Circle Icon (account_circle_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24) (https://fonts.google.com/icons)
+Component: Language Icon (language_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24) (https://fonts.google.com/icons)
 
 Apache License
 Version 2.0, January 2004
