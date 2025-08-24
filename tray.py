@@ -117,7 +117,7 @@ class AboutDialog(QDialog):
         github_logo.setToolTip("Typersian on GitHub")
 
         def open_github():
-            QDesktopServices.openUrl(QUrl("https://github.com/radanbahrami"))
+            QDesktopServices.openUrl(QUrl("https://github.com/radanbahrami/typersian"))
 
         github_logo.mousePressEvent = lambda event: open_github()
 
