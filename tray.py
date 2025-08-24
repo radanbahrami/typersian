@@ -105,7 +105,7 @@ class AboutDialog(QDialog):
 
         # An author logo as clickable label (opens author's website)
         author_logo = QLabel()
-        svg_renderer = QSvgRenderer(get_asset_path("account_circle_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"))
+        svg_renderer = QSvgRenderer(get_asset_path("account_circle_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg"))
         pixmap = QPixmap(20, 20)
         pixmap.fill(Qt.transparent)
         painter = QPainter(pixmap)
