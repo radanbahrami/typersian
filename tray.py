@@ -85,6 +85,24 @@ class AboutDialog(QDialog):
         version_label.setAlignment(Qt.AlignCenter)
         version_label.setStyleSheet("font-size: 9pt;")
 
+        # Typersian Website logo as clickable label (opens Typersian site)
+        website_logo = QLabel()
+        svg_renderer = QSvgRenderer(get_asset_path("language_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg"))
+        pixmap = QPixmap(20, 20)
+        pixmap.fill(Qt.transparent)
+        painter = QPainter(pixmap)
+        svg_renderer.render(painter)
+        painter.end()
+        website_logo.setPixmap(pixmap)
+        website_logo.setAlignment(Qt.AlignCenter)
+        website_logo.setCursor(QCursor(Qt.PointingHandCursor))
+        website_logo.setToolTip("Typersian Website")
+
+        def open_typersian_website():
+            QDesktopServices.openUrl(QUrl("https://typersian.site"))
+
+        website_logo.mousePressEvent = lambda event: open_typersian_website()
+
         # GitHub logo as clickable label (opens project page)
         github_logo = QLabel()
         svg_renderer = QSvgRenderer(get_asset_path("github-mark-white.svg"))
@@ -121,7 +139,7 @@ class AboutDialog(QDialog):
 
         author_logo.mousePressEvent = lambda event: open_website()
 
-            # Buy Me a Coffee logo as clickable label (opens coffeez.xyz)
+        # Buy Me a Coffee logo as clickable label (opens coffeez.xyz)
         coffeez_logo = QLabel()
         pixmap = QPixmap(get_asset_path("coffeez-logo-white.png"))
         pixmap = pixmap.scaled(20, 20, Qt.KeepAspectRatio, Qt.SmoothTransformation)
@@ -138,9 +156,9 @@ class AboutDialog(QDialog):
         # Create a horizontal layout for the icons
         icon_hbox = QHBoxLayout()
         icon_hbox.setAlignment(Qt.AlignCenter)
+        icon_hbox.addWidget(website_logo)
         icon_hbox.addWidget(github_logo)
         icon_hbox.addWidget(author_logo)
-        icon_hbox.addSpacing(-2)
         icon_hbox.addWidget(coffeez_logo)
 
         # OK button
@@ -252,4 +270,3 @@ def tray(on_quit_callback):
 
 if __name__ == "__main__":
     tray(lambda: print("Exiting..."))
-    
