@@ -68,3 +68,5 @@ Website: [radanbahrami.com](https://radanbahrami.com)
 ## Contact Me
 
 You can contact me via email: radanbhr@gmail.com.
+
+Typersian can make mistakes. Review results before using.
