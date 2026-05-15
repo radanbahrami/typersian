@@ -1,4 +1,4 @@
-Copyright (c) 2025 Radan Bahrami. All rights reserved.
+Copyright (c) 2026 Radan Bahrami. All rights reserved.
 Typersian and the Typersian logos are trademarks of Radan Bahrami.
 
 Note: This application includes third-party components that are licensed under their respective licenses. 
