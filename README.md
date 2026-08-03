@@ -58,6 +58,9 @@ Typersian is licensed under the GNU General Public License v3.0 (Additional term
 This project isn't actively looking for contributions, but well-scoped
 bug fixes are welcome.
 
+## Acknowledgments
+- [@MohammadMdv](https://github.com/MohammadMdv), fixed a macOS startup crash (#1)
+
 ## Author
 
 Created by Radan Bahrami
