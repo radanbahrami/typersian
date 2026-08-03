@@ -55,7 +55,8 @@ Typersian is licensed under the GNU General Public License v3.0 (Additional term
 
 ## Contributing
 
-Contributions are currently not accepted.
+This project isn't actively looking for contributions, but well-scoped
+bug fixes are welcome.
 
 ## Author
 
