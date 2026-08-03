@@ -64,8 +64,12 @@ def on_quit():
     sys.exit(0)  # Exit the application
 
 if __name__ == "__main__":
-    # Start the hotkey listener in a background thread so the tray icon remains responsive
-    Thread(target=start_hotkey_listener, daemon=True).start()
-
-    # Start the PyQt5 tray icon in the main thread; provides a quit option
-    tray(on_quit)
+    # Start the PyQt5 tray icon in the main thread; provides a quit option.
+    # The hotkey listener is started via on_app_ready, once QApplication has
+    # initialized NSApplication on the main thread — starting it any earlier
+    # races pynput's Carbon keycode lookup against Qt/Cocoa startup and
+    # crashes the process (SIGABRT) on macOS.
+    tray(
+        on_quit,
+        on_app_ready=lambda: Thread(target=start_hotkey_listener, daemon=True).start(),
+    )

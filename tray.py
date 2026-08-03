@@ -188,13 +188,22 @@ class AboutDialog(QDialog):
         vbox.addLayout(hbox)
         self.setLayout(vbox)
 
-def tray(on_quit_callback):
+def tray(on_quit_callback, on_app_ready=None):
     """
     Initializes and runs the system tray icon with menu actions.
     Applies dark theme, handles About dialog, and quit action.
+
+    on_app_ready, if given, is called right after QApplication is created
+    (before the event loop starts). macOS aborts if pynput's keyboard
+    listener starts translating keycodes on a background thread before
+    QApplication has initialized NSApplication on the main thread, so
+    anything that starts that listener must wait for this callback.
     """
     QApplication.setQuitOnLastWindowClosed(False)
     app = QApplication(sys.argv)
+
+    if on_app_ready:
+        on_app_ready()
 
     QFontDatabase.addApplicationFont(get_asset_path("OpenSans-Regular.ttf"))
     app.setFont(QFont("Open Sans"))
