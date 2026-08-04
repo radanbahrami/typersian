@@ -59,7 +59,7 @@ This project isn't actively looking for contributions, but well-scoped
 bug fixes are welcome.
 
 ## Acknowledgments
-- [@MohammadMdv](https://github.com/MohammadMdv), fixed a macOS startup crash (#1)
+- [@MohammadMdv](https://github.com/MohammadMdv) — fixed a macOS startup crash (#1)
 
 ## Author
 
