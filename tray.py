@@ -139,27 +139,12 @@ class AboutDialog(QDialog):
 
         author_logo.mousePressEvent = lambda event: open_website()
 
-        # Buy Me a Coffee logo as clickable label (opens coffeez.xyz)
-        coffeez_logo = QLabel()
-        pixmap = QPixmap(get_asset_path("coffeez-logo-white.png"))
-        pixmap = pixmap.scaled(20, 20, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        coffeez_logo.setPixmap(pixmap)
-        coffeez_logo.setAlignment(Qt.AlignCenter)
-        coffeez_logo.setCursor(QCursor(Qt.PointingHandCursor))
-        coffeez_logo.setToolTip("Buy Me a Coffee")
-
-        def open_coffee():
-            QDesktopServices.openUrl(QUrl("https://coffeez.xyz/radanbahrami"))
-
-        coffeez_logo.mousePressEvent = lambda event: open_coffee()
-
         # Create a horizontal layout for the icons
         icon_hbox = QHBoxLayout()
         icon_hbox.setAlignment(Qt.AlignCenter)
         icon_hbox.addWidget(website_logo)
         icon_hbox.addWidget(github_logo)
         icon_hbox.addWidget(author_logo)
-        icon_hbox.addWidget(coffeez_logo)
 
         # OK button
         ok_btn = QPushButton("OK")
