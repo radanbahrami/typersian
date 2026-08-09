@@ -73,4 +73,6 @@ Website: [radanbahrami.com](https://radanbahrami.com)
 
 You can contact me via email: radanbhr@gmail.com.
 
+**Note:** The Coffeez donation links that were previously available in the application have been removed and are no longer valid. Do not use them.
+
 Typersian can make mistakes. Review results before using.
